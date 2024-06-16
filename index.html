@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga de Archivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container">
+            <a href="#login" class="login-btn">Iniciar Sesión</a>
+            <h1>Descargar Minecraft</h1>
+            <p>Tu fuente confiable para descargar archivos de manera rápida y segura.</p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="intro-section">
+                <h2>¿Por qué Elegir Nuestra Plataforma?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, nisi a laoreet posuere, urna justo tempus odio, eget laoreet turpis arcu at risus. Nullam tincidunt, felis eget interdum pretium, lorem nisi varius nunc, nec cursus magna orci quis eros.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </section>
+
+            <!-- Carrusel de Imágenes -->
+            <section class="carousel-section">
+                <h2>Galería de Imágenes</h2>
+                <div class="carousel">
+                    <button class="carousel-btn left">&#9664;</button>
+                    <div class="carousel-images">
+                        <img src="imagenes/5f9j8amb.png" alt="Imagen 1">
+                        <img src="imagenes/19qktham.png" alt="Imagen 2">
+                        <img src="imagenes/j23za0au.png" alt="Imagen 3">
+                    </div>
+                    <button class="carousel-btn right">&#9654;</button>
+                </div>
+            </section>
+            
+
+            <!-- Sección de Descarga -->
+            <section class="download-section">
+                <h2>Archivo Disponible para Descarga</h2>
+                <p>Haz clic en el botón de abajo para iniciar la descarga del archivo. Estamos seguros de que encontrarás este archivo útil.</p>
+                <a href="archivo.txt" download class="btn">Descargar Archivo</a>
+            </section>
+
+            <!-- Sección de Calificaciones -->
+            <section class="ratings-section">
+                <h2>Reseñas del Archivo</h2>
+                <div class="rating">
+                    <div class="stars">★★★★☆</div>
+                    <p>4.5 de 5 estrellas</p>
+                </div>
+                <div class="comments">
+                    <h3>Comentarios</h3>
+                    <div class="comment">
+                        <img src="profile1.jpg" alt="Profile Picture" class="profile-pic">
+                        <div>
+                            <strong>Usuario123</strong>
+                            <p>Este archivo me ayudó mucho. ¡Gracias por compartirlo!</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="profile2.jpg" alt="Profile Picture" class="profile-pic">
+                        <div>
+                            <strong>AmanteDeLosLibros</strong>
+                            <p>Muy útil y fácil de usar. Lo recomendaré a mis amigos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-comment">
+                    <h3>Añadir una Opinión</h3>
+                    <form id="commentForm">
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                    <div id="user-comments" class="user-comments">
+                        <h3>Mis Comentarios</h3>
+                        <!-- Aquí se mostrarán los comentarios del usuario -->
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Espacio para Publicidad -->
+            <section class="advertisement-section">
+                <h2>Publicidad</h2>
+                <div class="advertisement">
+                    <p>Espacio para publicidad</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Descarga de Archivo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Login Form Modal -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn">Iniciar Sesión</button>
+                <button type="button" class="btn register-btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Form Modal -->
+    <div id="register" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Registrarse</h2>
+            <form action="#">
+                <label for="new-username">Nombre de usuario:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="new-password">Contraseña:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <label for="confirm-password">Confirmar contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
