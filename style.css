@@ -388,17 +388,6 @@ body {
     background-color: #218838;
 }
 
-.intro-section h2 {
-    font-size: 1.7em;
-    margin-bottom: 20px;
-}
-
-.intro-section p {
-    font-size: 0.6em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header {
@@ -418,9 +407,12 @@ body {
         padding: 10px 20px;
         font-size: 1em;
     }
-
+    .intro-section h2 {
+       font-size: 1.7em;
+       margin-bottom: 20px;
+    }
     .intro-section p {
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     .login-btn {
