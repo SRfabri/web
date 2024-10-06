@@ -414,3 +414,20 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Tamaño para h1 en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 20px; /* Tamaño para h2 en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 18px; /* Tamaño para h3 en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 14px; /* Tamaño para párrafos en pantallas pequeñas */
+    }
+}
